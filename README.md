@@ -106,7 +106,7 @@ Ask the user if they want to check another number.
 Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
 Handle invalid inputs for the continuation prompt (Y/N) gracefully.
 
-
+```
 @echo off
 :main
 set /p number=Enter a number: 
@@ -126,6 +126,7 @@ goto choice
 :end
 echo Thank you for using the odd number checker!
 pause
+```
 
 ## OUTPUT
 <img width="610" height="282" alt="WhatsApp Image 2026-09-16 at 16 05 20" src="https://github.com/user-attachments/assets/51a45f0f-0d50-448a-bd95-0972539f3050" />
@@ -134,13 +135,13 @@ pause
 
 
 Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
-
+```
 @echo off
 for %%i in (1 2 3 4 5) do (
     echo Number: %%i
 )
 pause
-
+```
 
 
 ## OUTPUT
@@ -156,7 +157,7 @@ Use the IF EXIST conditional statement.
 Make sure the script works for files located in the same directory as the batch file.
 Use pause to keep the command window open after displaying the message.
 Expected Output (if the file exists):
-
+```
 @echo off
 if exist sample.txt (
     echo sample.txt exists.
@@ -164,7 +165,7 @@ if exist sample.txt (
     echo sample.txt does not exist.
 )
 pause
-
+```
 
 
 ## OUTPUT
@@ -176,7 +177,7 @@ Say Hello – Displays the message Hello, World!
 Create a File – Creates a file named newfile.txt with the content This is a new file
 Exit – Exits the script with a goodbye message
 The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
-
+```
 @echo off
 :menu
 echo 1. Say Hello
@@ -198,7 +199,7 @@ goto menu
 :end
 echo Goodbye!
 pause
-
+```
 
 
 ## OUTPUT
