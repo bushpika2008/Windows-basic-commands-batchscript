@@ -82,11 +82,12 @@ fc hello.txt Rose.txt
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
-
+```
 @echo off
 set name=John
 echo Hello, %name%!
 pause
+```
 
 
 
